@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #fd853a;
+        --color-primary-dark: #f57c00;
+        --breakpoint-tablet: 990px;
+        --color-gray: #98a2b3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      id="navbar"
+      class="w-full z-50 mt-10! flex items-center justify-center px-[10px]!"
+    >
+      <div
+        class="bg-black h-[66px] md:h-[86px] rounded-[50px] max-w-[1298px] w-full px-[12px]! sm:px-[24px]!"
+      >
+        <div
+          class="flex tablet:hidden items-center justify-between h-full relative z-[1000]"
+        >
+          <div class="flex items-center gap-[10px]">
+            <img
+              alt="Logo"
+              class="w-[36px] aspect-square"
+              src="/assets/navlogo.png"
+            />
+            <span class="text-2xl font-bold text-white">JCREA</span>
+          </div>
+          <button
+            id="menu-toggle"
+            class="relative text-white focus:outline-none flex items-center justify-center w-[40px] h-[40px]"
+          >
+            <i class="hamburger fas fa-bars text-[32px]"></i>
+            <span class="cross-icon absolute text-[48px]">&times;</span>
+          </button>
+          <div id="mobile-menu" class="z-[999] w-full">
+            <a href="#introSection">Home</a>
+            <a href="#myWorkExperience">About</a>
+            <a href="#myServices">Service</a>
+            <a href="#myResume">Resume</a>
+            <a href="#myPortfolio">Project</a>
+            <a href="#letsDiscuss">Contact</a>
+          </div>
+        </div>
+
+        <div class="hidden tablet:flex items-center justify-between h-full">
+          <div class="flex items-center justify-between">
+            <a
+              href="#introSection"
+              class="px-10! py-5! hover:bg-primary rounded-[60px] text-white! transition-all duration-300 ease-in-out"
+              >Home</a
+            >
+            <a
+              href="#myWorkExperience"
+              class="px-10! py-5! hover:bg-primary transition-all duration-300 ease-in-out rounded-[60px] text-white!"
+              >About</a
+            >
+            <a
+              href="#myServices"
+              class="px-10! py-5! hover:bg-primary transition-all duration-300 ease-in-out rounded-[60px] text-white!"
+              >Service</a
+            >
+          </div>
+          <div
+            class="relative flex items-center gap-[10px] group/item cursor-pointer"
+          >
+            <!-- Logo -->
+            <img
+              alt="Logo"
+              class="w-[46px] aspect-square transition-transform duration-300 ease-in-out group-hover/item:-translate-x-2"
+              src="/assets/navlogo.png"
+            />
+
+            <!-- Default Text (JCREA) -->
+            <span
+              class="text-3xl font-bold text-white transition-opacity duration-300 ease-in-out group-hover/item:opacity-0"
+            >
+              JCREA
+            </span>
+
+            <!-- Hover Text (Made by Abhishek Rawat) -->
+            <div
+              class="w-full absolute left-[55px] opacity-0 transition-opacity duration-300 ease-in-out group-hover/item:opacity-100 text-white"
+            >
+              <span class="text-gray text-[14px] block">Made by</span>
+              <span>Abhishek Rawat</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <a
+              href="#myResume"
+              class="px-10! py-5! hover:bg-primary transition-all duration-300 ease-in-out rounded-[60px] text-white!"
+              >Resume</a
+            >
+            <a
+              href="#myPortfolio"
+              class="px-10! py-5! hover:bg-primary transition-all duration-300 ease-in-out rounded-[60px] text-white!"
+              >Project</a
+            >
+            <a
+              href="#letsDiscuss"
+              class="px-10! py-5! hover:bg-primary transition-all duration-300 ease-in-out rounded-[60px] text-white!"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Intro Section -->
+    <section
+      id="introSection"
+      class="px-[20px]! md:px-[50px]! md:tablet:px-[71px]!"
+    >
+      <div
+        id="introSection"
+        class="pt-[37px]! w-[full] max-w-[1298px] m-auto! relative h-[1024px] md:h-[1024px] md:tablet:h-[846px] overflow-hidden"
+      >
+        <!-- Hello I am jenny -->
+        <div
+          class="flex flex-col items-center intro absolute left-1/2 transform -translate-x-1/2 w-full"
+        >
+          <div class="relative">
+            <button
+              class="px-[25.49px]! py-[12.75px]! border border-[1.27px] rounded-[38.24px] text-[20px] hover:border-primary hover:text-primary leading-[100%]"
+            >
+              Hello!
+            </button>
+            <img
+              src="/assets/textdecorator.png"
+              alt=""
+              class="absolute top-[-16px] right-[-20px] w-[27.5px] h-[28.5px] rotate-180"
+            />
+          </div>
+          <div
+            class="font-[600] text-[48px] md:text-[72px] md:tablet:text-[95px] flex flex-col items-center text-center"
+          >
+            <div class="leading-none">
+              I’m <span class="text-primary">Jenny</span>
+            </div>
+            <div class="leading-none relative">
+              Product Designer
+              <img
+                src="/assets/textdecorator.png"
+                alt=""
+                class="absolute left-[-60px] bottom-[-56px] w-[71.89px] h-[74.5px] decorator hidden min-[580px]:block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Quote -->
+        <div
+          class="w-full max-w-[328px] flex flex-col items-start gap-[24px] absolute top-[250px] md:top-[320px] md:tablet:top-[373px] quote z-[40]"
+        >
+          <img
+            src="/assets/quote-up.png"
+            alt="quote-up"
+            class="w-[36px] aspect-square"
+          />
+          <p
+            class="text-[20px] leading-[100%] tracking-[-1.5%] font-[500] text-[#344054]"
+          >
+            Jenny’s Exceptional product designensure our website’s
+            success.Highly Recommended
+          </p>
+        </div>
+        <!-- rating -->
+        <div
+          class="flex flex-col items-end gap-[21px] w-full max-w-[169px] absolute top-[400px] md:top-[315px] md:tablet:top-[380px] right-0 rating"
+        >
+          <img
+            src="/assets/fivestar.png"
+            alt="fivestar"
+            class="w-full max-w-[160px] h-[32px]"
+          />
+          <div class="flex flex-col items-end gap-[5px] text-[#171717]">
+            <span class="text-[45px] leading-[100%] tracking-[-1.5%] font-[500]"
+              >10 Years</span
+            >
+            <span class="text-[20px] leading-[100%] tracking-[-1.5%]"
+              >Experience</span
+            >
+          </div>
+        </div>
+        <!-- person -->
+        <div
+          class="absolute w-full h-[520px] md:h-[636px] max-w-[953px] bottom-0 left-1/2 transform -translate-x-1/2"
+        >
+          <div class="relative flex justify-center h-full w-full">
+            <!-- button -->
+            <div
+              class="backdrop-blur-[5px] absolute z-40 bottom-[50px]! flex items-center rounded-full overflow-hidden border border-white/30 bg-white/20 p-2!"
+            >
+              <!-- Portfolio Button -->
+              <a href="#myPortfolio">
+                <button
+                  class="px-6! py-3! text-white text-xl font-[200] hover:font-medium rounded-full transition-all duration-300 hover:bg-[#e87f3a] group"
+                >
+                  <span class="flex items-center">
+                    PortFolio
+                    <span
+                      class="ml-2! opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                      >↗</span
+                    >
+                  </span>
+                </button>
+              </a>
+
+              <!-- Hire me Button -->
+              <a href="#letsDiscuss">
+                <button
+                  class="px-6! py-3! text-white text-xl font-[200] hover:font-medium rounded-full transition-all duration-300 hover:bg-[#e87f3a] group"
+                >
+                  <span class="flex items-center">
+                    Hire me
+                    <span
+                      class="ml-2! opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                      >↗</span
+                    >
+                  </span>
+                </button>
+              </a>
+            </div>
+            <!-- semi circle -->
+            <div
+              class="w-full max-w-[812px] h-[340px] md:h-[406px] flex justify-center items-end overflow-hidden absolute bottom-0 semi-circle cursor-pointer z-10!"
+            >
+              <div
+                class="w-full h-[340px] md:h-[406px] rounded-t-full bg-[#FEB273]"
+              ></div>
+            </div>
+            <div
+              class="absolute bottom-0 w-[952px] h-full md:pointer-events-none z-30!"
+            >
+              <img
+                src="/assets/intropic.png"
+                alt="person"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <!-- bg pattern -->
+            <div
+              class="absolute w-full h-[636px] max-w-[953px] bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 z-20! introPattern pointer-events-none hidden md:block"
+            >
+              <img
+                src="/assets/intorbgpattern.png"
+                alt="intro-bg-pattern"
+                class="w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- My Services Section -->
+    <section
+      id="myServices"
+      class="w-full h-[920px]! m-auto! md:tablet:rounded-[50px]! overflow-hidden bg-[#171717] relative"
+    >
+      <img
+        src="/assets/servicebg.jpeg"
+        alt="service-bg"
+        class="w-full h-full object-cover opacity-20"
+      />
+      <img
+        src="/assets/bgabstract.png"
+        alt="service-bg-left"
+        class="w-full max-w-[432px] aspect-square absolute top-[150px] left-[-125px] rotate-[151.66deg] blur-[2px] abs-left"
+      />
+      <img
+        src="/assets/bgabstract.png"
+        alt="service-bg-center"
+        class="w-full max-w-[181px] aspect-square absolute top-[106px] left-[560px] rotate-[-146deg] blur-[3px] abs-center"
+      />
+      <img
+        src="/assets/bgabstract.png"
+        alt="service-bg-left"
+        class="w-full max-w-[873px] aspect-square absolute top-[176px] right-[-385px] abs-right"
+      />
+      <div
+        class="px-[20px]! md:px-[50px]! md:tablet:px-[71px]! pt-[72px]! md:pt-[116px]! absolute inset-0"
+      >
+        <div
+          class="flex flex-col md:flex-row justify-between mb-[95px]! gap-[40px] items-center"
+        >
+          <h2
+            class="self-center w-full max-w-[448px] text-[48px] leading-[100%] tracking-[-1.5%] text-white font-[500] relative text-center"
+          >
+            My
+            <span class="text-primary">Services</span>
+          </h2>
+          <p
+            class="font-medium text-[20px] leading-[100%] tracking-[-1.5%] text-white w-full max-w-[576px] backdrop-blur-[5px] bg-[#68686833] p-[15px]! rounded-[5px]"
+          >
+            My services include UI design, wireframing, prototyping, and
+            usability testing, ensuring seamless, user-friendly digital
+            products.
+          </p>
+        </div>
+        <div class="slider-container w-full max-w-[1298px] mx-auto!">
+          <div class="service-carousel">
+            <!-- card 1 -->
+            <div
+              class="service-card backdrop-blur-[15px] bg-[#68686833] hover:bg-[#FD853A] flex flex-col gap-[21px] rounded-[24px] transition-all duration-300 ease-in-out border-2 border-[#ffffff50] w-full overflow-hidden group/service"
+            >
+              <h2
+                class="border-b-2 border-[#ffffff50] pt-[44px]! pb-[23px]! px-[36px]! text-[24px] md:text-[32px] text-[#fff] mb-[40px]!"
+              >
+                UI/UX Design
+              </h2>
+              <div class="relative">
+                <img
+                  src="/assets/stackImage.png"
+                  alt="service-stack-img"
+                  class="w-full translate-y-[10px] group-hover/service:scale-[1.05] duration-300 ease-in-out"
+                />
+                <button
+                  class="service-detail absolute right-1 bottom-1 w-[84px] md:tablet:w-[114px] aspect-square rounded-full text-white text-[34px] bg-[#1D2939] group-hover/service:bg-primary group-hover/service:text-white duration-300 ease-in-out cursor-pointer rotate-[-45deg]"
+                >
+                  <i
+                    class="fa-solid fa-arrow-right text-[36px] md:tablet:text-[72px]"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div
+              class="service-card backdrop-blur-[15px] bg-[#68686833] hover:bg-[#FD853A] flex flex-col gap-[21px] rounded-[24px] transition-all duration-300 ease-in-out border-2 border-[#ffffff50] w-full overflow-hidden group/service"
+            >
+              <h2
+                class="border-b-2 border-[#ffffff50] pt-[44px]! pb-[23px]! px-[36px]! text-[24px] md:text-[32px] text-[#fff] mb-[40px]!"
+              >
+                Animation
+              </h2>
+              <div class="relative">
+                <img
+                  src="/assets/stackImage.png"
+                  alt="service-stack-img"
+                  class="w-full translate-y-[10px] group-hover/service:scale-[1.05] duration-300 ease-in-out"
+                />
+                <button
+                  class="service-detail absolute right-1 bottom-1 w-[84px] md:tablet:w-[114px] aspect-square rounded-full text-white text-[34px] bg-[#1D2939] group-hover/service:bg-primary group-hover/service:text-white duration-300 ease-in-out cursor-pointer rotate-[-45deg]"
+                >
+                  <i
+                    class="fa-solid fa-arrow-right text-[36px] md:tablet:text-[72px]"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div
+              class="service-card backdrop-blur-[15px] bg-[#68686833] hover:bg-[#FD853A] flex flex-col gap-[21px] rounded-[24px] transition-all duration-300 ease-in-out border-2 border-[#ffffff50] w-full overflow-hidden group/service"
+            >
+              <h2
+                class="border-b-2 border-[#ffffff50] pt-[44px]! pb-[23px]! px-[36px]! text-[24px] md:text-[32px] text-[#fff] mb-[40px]!"
+              >
+                Wireframe
+              </h2>
+              <div class="relative">
+                <img
+                  src="/assets/stackImage.png"
+                  alt="service-stack-img"
+                  class="w-full translate-y-[10px] group-hover/service:scale-[1.05] duration-300 ease-in-out"
+                />
+                <button
+                  class="service-detail absolute right-1 bottom-1 w-[84px] md:tablet:w-[114px] aspect-square rounded-full text-white text-[34px] bg-[#1D2939] group-hover/service:bg-primary group-hover/service:text-white duration-300 ease-in-out cursor-pointer rotate-[-45deg]"
+                >
+                  <i
+                    class="fa-solid fa-arrow-right text-[36px] md:tablet:text-[72px]"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div
+              class="service-card backdrop-blur-[15px] bg-[#68686833] hover:bg-[#FD853A] flex flex-col gap-[21px] rounded-[24px] transition-all duration-300 ease-in-out border-2 border-[#ffffff50] w-full overflow-hidden group/service"
+            >
+              <h2
+                class="border-b-2 border-[#ffffff50] pt-[44px]! pb-[23px]! px-[36px]! text-[24px] md:text-[32px] text-[#fff] mb-[40px]!"
+              >
+                App Design
+              </h2>
+              <div class="relative">
+                <img
+                  src="/assets/stackImage.png"
+                  alt="service-stack-img"
+                  class="w-full translate-y-[10px] group-hover/service:scale-[1.05] duration-300 ease-in-out"
+                />
+                <button
+                  class="service-detail absolute right-1 bottom-1 w-[84px] md:tablet:w-[114px] aspect-square rounded-full text-white text-[34px] bg-[#1D2939] group-hover/service:bg-primary group-hover/service:text-white duration-300 ease-in-out cursor-pointer rotate-[-45deg]"
+                >
+                  <i
+                    class="fa-solid fa-arrow-right text-[36px] md:tablet:text-[72px]"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- My Work Experience -->
+    <section id="myWorkExperience">
+      <div class="w-full max-w-[1298px] m-auto!">
+        <h1
+          class="text-[#344054] font-[500] text-[64px] text-center py-[85px]!"
+        >
+          My <span class="text-primary">Work Experience</span>
+        </h1>
+        <div class="px-[20px]! md:px-[50px]! md:tablet:px-[71px]!">
+          <div class="flex md:justify-between gap-[20px]">
+            <div class="w-full max-w-[495px] hidden md:block">
+              <h2
+                class="text-[#344054] font-[500] text-[28px] md:text-[32px] md:tablet:text-[40px] leading-[100%] tracking-[-1.5%] mb-[14px]!"
+              >
+                Cognigent, Mumbai
+              </h2>
+              <span class="text-[#98A2B3] font-[400] text-[24px]"
+                >Sep 2016 - July 2020</span
+              >
+            </div>
+            <div class="w-[48px]">
+              <div
+                class="w-[48px] aspect-square rounded-full border-2 p-[6px]! border-dashed border-[#1D2939] bg-white"
+              >
+                <span
+                  class="w-full h-full block bg-orange-500 rounded-full"
+                ></span>
+              </div>
+              <div
+                class="h-[calc(100%-48px)] border-l-2 border-[#D0D5DD] border-dashed m-auto! w-[1px]"
+              ></div>
+            </div>
+            <div>
+              <div class="w-full max-w-[444px] pb-[40px]!">
+                <div class="md:hidden mb-[15px]!">
+                  <h2
+                    class="text-[#344054] font-[500] text-[28px] md:text-[32px] md:tablet:text-[40px] leading-[100%] tracking-[-1.5%] mb-[5px]!"
+                  >
+                    Cognigent, Mumbai
+                  </h2>
+                  <span class="text-[#98A2B3] font-[400] text-[24px]"
+                    >Sep 2016 - July 2020</span
+                  >
+                </div>
+                <h2
+                  class="text-primary md:text-[#344054] font-[500] text-[28px] md:text-[32px] md:tablet:text-[40px] leading-[100%] tracking-[-1.5%] mb-[14px]!"
+                >
+                  Experince Designer
+                </h2>
+                <span class="text-[#98A2B3] font-[500] text-[20px]"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  lacus nunc, posuere in justo vulputate, bibendum sodales
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="flex md:justify-between gap-[20px]">
+            <div class="w-full max-w-[495px] hidden md:block">
+              <h2
+                class="text-[#344054] font-[500] text-[28px] md:text-[32px] md:tablet:text-[40px] leading-[100%] tracking-[-1.5%] mb-[14px]!"
+              >
+                Sugee Pvt limited, Mumbai
+              </h2>
+              <span class="text-[#98A2B3] font-[400] text-[24px]"
+                >Sep 2020 - July 2023</span
+              >
+            </div>
+            <div class="w-[48px]">
+              <div
+                class="w-[48px] aspect-square rounded-full border-2 p-[6px]! border-dashed border-[#1D2939] bg-white"
+              >
+                <span
+                  class="w-full h-full block bg-orange-500 rounded-full"
+                ></span>
+              </div>
+              <div
+                class="h-[calc(100%-48px)] border-l-2 border-[#D0D5DD] border-dashed m-auto! w-[1px]"
+              ></div>
+            </div>
+            <div>
+              <div class="w-full max-w-[444px] pb-[40px]!">
+                <div class="md:hidden mb-[15px]!">
+                  <h2
+                    class="text-[#344054] font-[500] text-[28px] md:text-[32px] md:tablet:text-[40px] leading-[100%] tracking-[-1.5%] mb-[5px]!"
+                  >
+                    Sugee Pvt limited, Mumbai
+                  </h2>
+                  <span class="text-[#98A2B3] font-[400] text-[24px]"
+                    >Sep 2020 - July 2023</span
+                  >
+                </div>
+                <h2
+                  class="text-primary md:text-[#344054] font-[500] text-[28px] md:text-[32px] md:tablet:text-[40px] leading-[100%] tracking-[-1.5%] mb-[14px]!"
+                >
+                  UI/UX Designer
+                </h2>
+                <span class="text-[#98A2B3] font-[500] text-[20px]"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  lacus nunc, posuere in justo vulputate, bibendum sodales
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="flex md:justify-between gap-[20px]">
+            <div class="w-full max-w-[495px] hidden md:block">
+              <h2
+                class="text-[#344054] font-[500] text-[28px] md:text-[32px] md:tablet:text-[40px] leading-[100%] tracking-[-1.5%] mb-[14px]!"
+              >
+                Cinetstox, Mumbai
+              </h2>
+              <span class="text-[#98A2B3] font-[400] text-[24px]"
+                >Sep 2023 - Present</span
+              >
+            </div>
+            <div class="w-[48px]">
+              <div
+                class="w-[48px] aspect-square rounded-full border-2 p-[6px]! border-dashed border-[#1D2939] bg-white"
+              >
+                <span
+                  class="w-full h-full block bg-orange-500 rounded-full"
+                ></span>
+              </div>
+              <div
+                class="h-[calc(100%-48px)] border-l-2 border-[#D0D5DD] border-dashed m-auto! w-[1px]"
+              ></div>
+            </div>
+            <div>
+              <div class="w-full max-w-[444px] pb-[40px]!">
+                <div class="md:hidden mb-[15px]!">
+                  <h2
+                    class="text-[#344054] font-[500] text-[28px] md:text-[32px] md:tablet:text-[40px] leading-[100%] tracking-[-1.5%] mb-[5px]!"
+                  >
+                    Cinetstox, Mumbai
+                  </h2>
+                  <span class="text-[#98A2B3] font-[400] text-[24px]"
+                    >Sep 2023 - Present</span
+                  >
+                </div>
+                <h2
+                  class="text-primary md:text-[#344054] font-[500] text-[28px] md:text-[32px] md:tablet:text-[40px] leading-[100%] tracking-[-1.5%] mb-[14px]!"
+                >
+                  Lead UX Designer
+                </h2>
+                <span class="text-[#98A2B3] font-[500] text-[20px]"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  lacus nunc, posuere in justo vulputate, bibendum sodales
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Hire Me -->
+    <section
+      id="whyHireMe"
+      class="w-full bg-[#F2F4F7] md:tablet:rounded-[50px]! py-[122px]! px-[20px]! md:px-[50px]! md:tablet:px-[71px]!"
+    >
+      <div
+        class="w-full max-w-[1298px] m-auto! flex md:flex-row flex-col gap-[48px] md:gap-0 align-center"
+      >
+        <!-- image section -->
+        <div class="relative flex justify-center">
+          <img
+            src="/assets/persontohire.png"
+            alt="person-to-hire"
+            class="w-full max-w-[603px] relative z-[10] hirePerson"
+          />
+          <img
+            src="/assets/bgloops.png"
+            alt="bg-loops"
+            class="w-full max-w-[603px] scale-0 absolute bottom-[10%] left-[-3%] opacity-0 bgLoops"
+          />
+        </div>
+        <!-- content section -->
+        <div
+          class="flex flex-col gap-[24px] md:tablet:gap-[47px] justify-center"
+        >
+          <h2
+            class="self-center md:self-start text-[#344054] font-[500] text-[48px] md:tablet:text-[64px] leading-[100%] tracking-[-1.5%]"
+          >
+            Why <span class="text-primary">Hire Me</span>?
+          </h2>
+          <p
+            class="self-center md:self-start w-full max-w-[444px] text-[#98A2B3] text-[20px] text-center md:text-left"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus
+            nunc, posuere in justo vulputate, bibendum sodales
+          </p>
+          <div class="flex w-full gap-[20px] md:gap-[10px] justify-center">
+            <div class="flex flex-col gap-[10px] md:flex-1">
+              <h2
+                class="text-[36px] font-[500] leading-[100%] tracking-[-1.5%]"
+              >
+                450+
+              </h2>
+              <span
+                class="text-[20px] text-[#667085] leading-[100%] tracking-[-1.5%]"
+                >Projects Completed</span
+              >
+            </div>
+            <div class="flex flex-col gap-[10px] md:flex-1">
+              <h2
+                class="text-[36px] font-[500] leading-[100%] tracking-[-1.5%]"
+              >
+                450+
+              </h2>
+              <span
+                class="text-[20px] text-[#667085] leading-[100%] tracking-[-1.5%]"
+                >Projects Completed</span
+              >
+            </div>
+          </div>
+          <a href="#letsDiscuss">
+            <button
+              class="text-black hire-me-btn self-center md:self-start border border-[#151515] py-[18px]! md:tablet:py-[33px]! px-[36px]! md:tablet:px-[59px]! text-[28px] md:tablet:text-[32px] leading-[100%] tracking-[-1.5%] rounded-[32px] cursor-pointer transition-all duration-300 ease-in-out hover:bg-primary hover:text-white hover:border-primary active:scale-95"
+            >
+              Hire me
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Resume Download Section -->
+    <section
+      id="myResume"
+      class="w-full bg-[#F2F4F7] px-[20px]! md:px-[50px]! py-[48px]! relative bg-[url('/assets/servicebg.jpeg')]"
+    >
+      <div class="w-full flex flex-col gap-[24px] md:tablet:gap-[47px]">
+        <h2
+          class="self-center md:self-start text-[#fff] font-[500] text-[48px] md:tablet:text-[64px] leading-[100%] tracking-[-1.5%] text-center"
+        >
+          "Turning Ideas into Reality –
+          <span class="text-primary">Grab My Resume</span>!
+        </h2>
+        <button
+          id="downloadResume"
+          class="shadow-md self-center flex-shrink-0 py-[20px]! px-[40px]! text-[28px] md:tablet:text-[32px] leading-[100%] tracking-[-1.5%] rounded-[60px] cursor-pointer bg-primary text-white transition-all duration-300 ease-in-out hover:bg-primary/80 hover:scale-105 active:scale-95 active:bg-primary/90"
+        >
+          <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+        </button>
+      </div>
+    </section>
+    <!-- My Portfolio -->
+    <section
+      id="myPortfolio"
+      class="px-[20px]! md:px-[50px]! md:tablet:px-[71px]!"
+    >
+      <div
+        class="w-full max-w-[1298px] m-auto! py-[97px]! flex flex-col gap-[48px]"
+      >
+        <div
+          class="flex items-center justify-between gap-[20px] flex-col md:flex-row"
+        >
+          <h2
+            class="text-[#344054] font-[500] text-[48px] md:tablet:text-[64px] leading-[100%] tracking-[-1.5%] w-full max-w-[643px]"
+          >
+            Lets have a look at my <span class="text-primary">Portfolio</span>
+          </h2>
+          <button
+            class="shadow-md self-end md:self-center flex-shrink-0 py-[20px]! px-[40px]! text-[28px] md:tablet:text-[32px] leading-[100%] tracking-[-1.5%] rounded-[60px] cursor-pointer bg-primary text-white transition-all duration-300 ease-in-out hover:bg-primary/80 hover:scale-105 active:scale-95 active:bg-primary/90"
+          >
+            See All
+          </button>
+        </div>
+        <!-- project container slider -->
+        <div class="portfolio-carousel projectContainer">
+          <!-- Portfolio 1 -->
+          <div>
+            <div
+              class="w-full max-w-[633px] h-[371px] overflow-hidden flex items-center relative rounded-[20px] group/portfolio overflow-hidden"
+            >
+              <img
+                src="/assets/portfolioImage.png"
+                alt="portfolio-image"
+                class="w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-bl from-transparent to-black/30 p-[10px]!"
+              >
+                <div
+                  class="relative w-full h-full flex flex-col gap-[10px] justify-between"
+                >
+                  <button
+                    class="detail-btn self-end w-[64px] aspect-square rounded-[50%] border border-primary text-primary text-[34px] group-hover/portfolio:bg-primary group-hover/portfolio:text-white duration-300 ease-in-out cursor-pointer"
+                  >
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                  <div
+                    class="absolute bottom-[-30%] left-0 rounded-[24px] py-[20px]! px-[24px]! group-hover/portfolio:bottom-0 group-hover/portfolio:bg-[#0000004D] group-hover/portfolio:backdrop-blur-[5px] duration-300 ease-[cubic-bezier(0.5,1.5,0.6,1)]"
+                  >
+                    <h2
+                      class="text-[48px] md:tablet:text-[64px] leading-[100%] tracking-[-1.5%] text-white font-[700]"
+                    >
+                      Lirante
+                    </h2>
+                    <p
+                      class="text-[14px] md:tablet:text-[16px] font-[400] text-[#FFEAD5] mt-[25px]! opacity-0 group-hover/portfolio:opacity-100"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sed congue interdum ligula a dignissim. Lorem ipsum dolor
+                      sit amet, consectetur adipiscing elit. Sed lobortis orci
+                      elementum egestas lobortis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio 2 -->
+          <div>
+            <div
+              class="w-full max-w-[633px] h-[371px] overflow-hidden flex items-center relative rounded-[20px] group/portfolio overflow-hidden"
+            >
+              <img
+                src="/assets/portfolioImage.png"
+                alt="portfolio-image"
+                class="w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-bl from-transparent to-black/30 p-[10px]!"
+              >
+                <div
+                  class="relative w-full h-full flex flex-col gap-[10px] justify-between"
+                >
+                  <button
+                    class="detail-btn self-end w-[64px] aspect-square rounded-[50%] border border-primary text-primary text-[34px] group-hover/portfolio:bg-primary group-hover/portfolio:text-white duration-300 ease-in-out cursor-pointer"
+                  >
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                  <div
+                    class="absolute bottom-[-30%] left-0 rounded-[24px] py-[20px]! px-[24px]! group-hover/portfolio:bottom-0 group-hover/portfolio:bg-[#0000004D] group-hover/portfolio:backdrop-blur-[5px] duration-300 ease-[cubic-bezier(0.5,1.5,0.6,1)]"
+                  >
+                    <h2
+                      class="text-[48px] md:tablet:text-[64px] leading-[100%] tracking-[-1.5%] text-white font-[700]"
+                    >
+                      Portfolio 2
+                    </h2>
+                    <p
+                      class="text-[14px] md:tablet:text-[16px] font-[400] text-[#FFEAD5] mt-[25px]! opacity-0 group-hover/portfolio:opacity-100"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sed congue interdum ligula a dignissim. Lorem ipsum dolor
+                      sit amet, consectetur adipiscing elit. Sed lobortis orci
+                      elementum egestas lobortis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio 3-->
+          <div>
+            <div
+              class="w-full max-w-[633px] h-[371px] overflow-hidden flex items-center relative rounded-[20px] group/portfolio overflow-hidden"
+            >
+              <img
+                src="/assets/portfolioImage.png"
+                alt="portfolio-image"
+                class="w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-bl from-transparent to-black/30 p-[10px]!"
+              >
+                <div
+                  class="relative w-full h-full flex flex-col gap-[10px] justify-between"
+                >
+                  <button
+                    class="detail-btn self-end w-[64px] aspect-square rounded-[50%] border border-primary text-primary text-[34px] group-hover/portfolio:bg-primary group-hover/portfolio:text-white duration-300 ease-in-out cursor-pointer"
+                  >
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                  <div
+                    class="absolute bottom-[-30%] left-0 rounded-[24px] py-[20px]! px-[24px]! group-hover/portfolio:bottom-0 group-hover/portfolio:bg-[#0000004D] group-hover/portfolio:backdrop-blur-[5px] duration-300 ease-[cubic-bezier(0.5,1.5,0.6,1)]"
+                  >
+                    <h2
+                      class="text-[48px] md:tablet:text-[64px] leading-[100%] tracking-[-1.5%] text-white font-[700]"
+                    >
+                      Portfolio 3
+                    </h2>
+                    <p
+                      class="text-[14px] md:tablet:text-[16px] font-[400] text-[#FFEAD5] mt-[25px]! opacity-0 group-hover/portfolio:opacity-100"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sed congue interdum ligula a dignissim. Lorem ipsum dolor
+                      sit amet, consectetur adipiscing elit. Sed lobortis orci
+                      elementum egestas lobortis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- skills capsule -->
+        <div class="flex justify-center gap-[14px] flex-wrap">
+          <div class="rounded-[24px] py-[15px]! px-[32px]! bg-[#F2F4F7]">
+            Landing Page
+          </div>
+          <div class="rounded-[24px] py-[15px]! px-[32px]! bg-[#F2F4F7]">
+            Product Design
+          </div>
+          <div class="rounded-[24px] py-[15px]! px-[32px]! bg-[#F2F4F7]">
+            Animation
+          </div>
+          <div class="rounded-[24px] py-[15px]! px-[32px]! bg-[#F2F4F7]">
+            Glasmdorphimd
+          </div>
+          <div class="rounded-[24px] py-[15px]! px-[32px]! bg-[#F2F4F7]">
+            Cards
+          </div>
+        </div>
+        <!-- current project -->
+        <div class="self-center flex flex-col gap-[24px]">
+          <div class="flex gap-[18px] md:items-center">
+            <h2
+              class="text-[36px] sm:text-[48px] leading-[100%] tracking-[-1.5%] text-[#344054] font-[700]"
+            >
+              Lirante - Food Delivery Solution
+            </h2>
+            <button
+              class="detail-btn w-[58px] h-[58px] flex-shrink-0 rounded-full text-[34px] bg-primary text-white rotate-[-45deg] flex items-center justify-center cursor-pointer"
+            >
+              <span class="fa-solid fa-arrow-right"></span>
+            </button>
+          </div>
+          <p
+            class="w-full max-w-[742px] text-[20px] text-center text-[#344054] leading-[100%] tracking-[-1.5%]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue
+            interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Sed lobortis orci elementum egestas lobortis.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section
+      id="testimonials"
+      class="w-full h-[920px] sm:h-[863px]! m-auto! md:tablet:rounded-[50px]! overflow-hidden bg-[#171717] relative"
+    >
+      <img
+        src="/assets/servicebg.jpeg"
+        alt="service-bg"
+        class="w-full h-full object-cover opacity-20"
+      />
+      <div
+        class="absolute inset-0 py-[50px]! sm:py-[116px]! px-[20px]! md:px-[50px]! md:tablet:px-[71px]!"
+      >
+        <!-- Testimonial Description -->
+        <div class="flex flex-col gap-[24px] sm:gap-[14px]">
+          <h2
+            class="self-center w-full max-w-[448px] text-[48px] leading-[100%] tracking-[-1.5%] text-white font-[500] relative text-center"
+          >
+            Testimonials That Speak to
+            <span class="text-primary">My Results</span>
+            <img
+              src="/assets/whiteTextDecorator.png"
+              alt=""
+              class="absolute top-[-15px] right-[13px] w-[27.5px] h-[28.5px] hidden min-[480px]:block"
+            />
+          </h2>
+          <p
+            class="self-center w-full max-w-[742px] text-[20px] text-[#F9FAFB] text-center relative"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue
+            interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Sed lobortis orci elementum egestas lobortis.
+            <img
+              src="/assets/starDecorator.png"
+              alt=""
+              class="absolute left-0 top-full w-[25.5px] aspect-square"
+            />
+            <img
+              src="/assets/starDecorator.png"
+              alt=""
+              class="bottom-full right-[-40.5px] absolute w-[25.5px] aspect-square rotate-[-35deg]"
+            />
+          </p>
+        </div>
+        <!-- Testimonial Cards -->
+        <div
+          class="mt-[96px]! m-auto! w-full max-w-[784px] p-[21px]! backdrop-blur-[5px] bg-[#ffffff24] flex flex-col gap-[21px] rounded-[24px] border-2 hover:border-[#979797] transition-all duration-300 ease-in-out"
+        >
+          <div class="flex justify-between align-center">
+            <div class="flex flex-col gap-[14px] justify-center">
+              <div class="flex gap-[12px] align-center">
+                <img
+                  src="/assets/profilepic.jpeg"
+                  alt="profile-pic"
+                  class="w-[55px] rounded-[50%] aspect-square"
+                />
+                <div class="flex flex-col justify-center">
+                  <h2
+                    class="text-white text-[22px] font-[700] leading-[100%] tracking-0"
+                  >
+                    Jayesh Patil
+                  </h2>
+                  <p class="text-white text-[18px] leading-[100%] tracking-0">
+                    CEO, Lirante
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-[5px]">
+                <div>
+                  <i class="fa-solid fa-star text-primary text-[24px]"></i>
+                  <i class="fa-solid fa-star text-primary text-[24px]"></i>
+                  <i class="fa-solid fa-star text-primary text-[24px]"></i>
+                  <i class="fa-solid fa-star text-primary text-[24px]"></i>
+                  <i class="fa-solid fa-star text-primary text-[24px]"></i>
+                </div>
+                <p
+                  class="text-white text-[24px] font-[500] leading-[100%] tracking-[-1.5%]"
+                >
+                  5.0
+                </p>
+              </div>
+            </div>
+            <img
+              src="/assets/quote-down.png"
+              alt="quote-down"
+              class="w-[64px] min-[420px]:w-[128px] aspect-square"
+            />
+          </div>
+          <!-- card description -->
+          <div class="">
+            <p
+              class="text-[20px] text-[#F9FAFB] leading-[100%] tracking-[-1.5%]"
+            >
+              consectetur adipiscing elit. Sed congue interdum ligula a
+              dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis
+              orci elementum egestas lobortis.Sed lobortis orci elementum
+              egestas lobortis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Lets Discuss -->
+    <section id="letsDiscuss">
+      <div
+        class="w-full max-w-[1298px] m-auto! py-[98px]! px-[20px]! md:px-[50px]! md:tablet:px-[71px]! flex flex-col gap-[10px]"
+      >
+        <h2
+          class="self-center text-[#344054] font-[500] text-[48px] md:text-[64px] leading-[100%] tracking-[-1.5%] w-full max-w-[799px] text-center"
+        >
+          Have an Awsome Project Idea?<span class="text-primary"
+            >Let’s Discuss</span
+          >
+        </h2>
+        <!-- Name Input -->
+        <div class="w-full max-w-[832px] self-center">
+          <div
+            class="bg-white rounded-[12px] md:rounded-[24px] shadow-md p-[8px]! md:p-[14px]! flex items-center gap-[17px] w-full max-w-[832px] border-1 border-[#E4E7EC]"
+          >
+            <div
+              class="flex items-center justify-center w-[48px] md:w-[64px] h-[40px] md:h-[58px] bg-[#FFEAD5] rounded-full flex-shrink-0"
+            >
+              <i
+                class="fa-solid fa-user text-[#FD853A] text-[22px] md:text-[32px]"
+              ></i>
+            </div>
+            <input
+              type="text"
+              placeholder="Enter Full Name *"
+              class="name-input flex-grow border-none focus:outline-none"
+            />
+          </div>
+          <div
+            class="name-error opacity-0 text-primary text-[14px] md:text-[18px]"
+          >
+            *
+          </div>
+        </div>
+        <!-- Email Input -->
+        <div class="w-full max-w-[832px] self-center">
+          <div
+            class="bg-white rounded-[12px] md:rounded-[24px] shadow-md p-[8px]! md:p-[14px]! flex items-center gap-[17px] w-full max-w-[832px] border-1 border-[#E4E7EC]"
+          >
+            <div
+              class="flex items-center justify-center w-[48px] md:w-[64px] h-[40px] md:h-[58px] bg-[#FFEAD5] rounded-full flex-shrink-0"
+            >
+              <i
+                class="fa-solid fa-at text-[#FD853A] text-[22px] md:text-[32px]"
+              ></i>
+            </div>
+            <input
+              type="email"
+              placeholder="Enter Email Address *"
+              class="email-input flex-grow border-none focus:outline-none"
+            />
+          </div>
+          <div
+            class="email-error opacity-0 text-primary text-[14px] md:text-[18px]"
+          >
+            *
+          </div>
+        </div>
+        <!-- message textarea -->
+        <div class="w-full max-w-[832px] self-center">
+          <div
+            class="bg-white rounded-[12px] md:rounded-[24px] shadow-md p-[8px]! md:p-[14px]! flex items-center gap-[17px] w-full max-w-[832px] border-1 border-[#E4E7EC]"
+          >
+            <div
+              class="self-start flex items-center justify-center w-[48px] md:w-[64px] h-[40px] md:h-[58px] bg-[#FFEAD5] rounded-full flex-shrink-0"
+            >
+              <i
+                class="fas fa-comment text-[#FD853A] text-[22px] md:text-[32px]"
+              ></i>
+            </div>
+            <textarea
+              placeholder="Enter your message *"
+              class="message-input flex-grow border-none focus:outline-none resize-none"
+              rows="6"
+            ></textarea>
+          </div>
+          <div
+            class="self-center message-error opacity-0 text-primary text-[14px] md:text-[18px]"
+          >
+            *
+          </div>
+        </div>
+        <button
+          class="shadow-md submit-button self-center flex-shrink-0 py-[14px]! md:py-[20px]! px-[28px]! md:px-[40px]! text-[24px] md:tablet:text-[32px] leading-[100%] tracking-[-1.5%] rounded-[60px] cursor-pointer bg-primary text-white transition-all duration-300 ease-in-out hover:bg-primary-dark hover:scale-105 active:scale-95 active:shadow-sm"
+        >
+          Submit
+        </button>
+        <!-- Recognition -->
+        <div
+          class="self-center flex items-center w-full max-w-[770px] justify-between flex-wrap gap-[20px]"
+        >
+          <div class="flex items-center">
+            <img
+              src="/assets/star.png"
+              alt="star"
+              class="w-[24px] aspect-square"
+            />
+            <p class="leading-[100%] tracking-[-1.5%]">4.9/5 Average Ratings</p>
+          </div>
+          <div class="flex items-center">
+            <img
+              src="/assets/award.png"
+              alt="star"
+              class="w-[24px] aspect-square"
+            />
+            <p class="leading-[100%] tracking-[-1.5%]">25+ Winning Awards</p>
+          </div>
+          <div class="flex items-center">
+            <img
+              src="/assets/shield-tick.png"
+              alt="star"
+              class="w-[24px] aspect-square"
+            />
+            <p class="leading-[100%] tracking-[-1.5%]">
+              Certified Product Designer
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Marquee Section -->
+    <section
+      id="marqueeSection "
+      class="h-[147px] overflow-hidden bg-[#FB6514] rounded-tl-[24px] rounded-br-[24px] flex items-center justify-center"
+    >
+      <div class="marquee-row bg-white min-w-[110%] rotate-[-3deg]">
+        <div class="marquee-block marquee1">
+          <ul class="marquee-item-list">
+            <li>
+              <img
+                src="/assets/marqueeStar.png"
+                class="w-[34px] aspect-square"
+              />Dashboard
+            </li>
+            <li>
+              <img
+                src="/assets/marqueeStar.png"
+                class="w-[34px] aspect-square"
+              />App Design
+            </li>
+            <li>
+              <img
+                src="/assets/marqueeStar.png"
+                class="w-[34px] aspect-square"
+              />Wireframe
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="fromBlogPost"></section>
+    <section
+      id="footerSection"
+      class="bg-[#272727] px-[20px]! md:px-[50px]! md:tablet:px-[71px]!"
+    >
+      <div class="container mx-auto py-[25px]!">
+        <div
+          class="flex flex-col md:flex-row items-center md:justify-between text-center gap-[20px]"
+        >
+          <h2 class="text-[64px] font-bold text-white leading-[100%] tracking-[-1.5%]">
+            Lets Connect there
+          </h2>
+          <a href="#letsDiscuss" class="inline-block">
+            <button
+              class="text-[24px] bg-[#FD853A] text-white py-[10px]! px-[20px]! rounded-[60px] flex items-center transition-all duration-300 ease-in-out hover:bg-[#F77A29] active:scale-95"
+            >
+              Hire me
+              <i class="fas fa-arrow-right ml-2! rotate-[-45deg]"> </i>
+            </button>
+          </a>
+          
+        </div>
+        <hr class="my-[55px]! border-gray-700" />
+        <div class="grid grid-cols-1 md:grid-cols-[50%_20%_25%] md:min-[1280px]:grid-cols-[50%_10%_10%_25%] gap-8!">
+          <div class="flex flex-col gap-[34px]">
+            <div class="flex items-center gap-[10px]">
+              <img
+                alt="Logo"
+                class="w-[36px] aspect-square"
+                src="/assets/navlogo.png"
+              />
+              <span class="text-2xl font-bold text-white">JCREA</span>
+            </div>
+            <p class="text-[#FCFCFD]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Sed lobortis orci elementum egestas
+              lobortis.
+            </p>
+            <div class="flex space-x-4!">
+              <a class="text-white text-[24px]" href="https://www.facebook.com/" target="_blank" referrerpolicy="no-referrer">
+                <i class="fab fa-facebook-f text-[#FCFCFD]"> </i>
+              </a>
+              <a class="text-white text-[24px]" href="https://youtube.com/" target="_blank" referrerpolicy="no-referrer">
+                <i class="fab fa-youtube text-[#FCFCFD]"> </i>
+              </a>
+              <a class="text-white text-[24px]" href="https://web.whatsapp.com/" target="_blank" referrerpolicy="no-referrer">
+                <i class="fab fa-whatsapp text-[#FCFCFD]"> </i>
+              </a>
+              <a class="text-white text-[24px]" href="https://www.instagram.com/" target="_blank" referrerpolicy="no-referrer">
+                <i class="fab fa-instagram text-[#FCFCFD]"> </i>
+              </a>
+              <a class="text-white text-[24px]" href="https://x.com/" target="_blank" referrerpolicy="no-referrer">
+                <i class="fab fa-x-twitter text-[#FCFCFD]"> </i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-[#FD853A] font-bold mb-4!">Navigation</h2>
+            <ul class="space-y-2!">
+              <li>
+                <a class="text-[#FCFCFD]!" href="#introSection"> Home </a>
+              </li>
+              <li>
+                <a class="text-[#FCFCFD]!" href="#myWorkExperience"> About Us </a>
+              </li>
+              <li>
+                <a class="text-[#FCFCFD]!" href="#myServices"> Service </a>
+              </li>
+              <li>
+                <a class="text-[#FCFCFD]!" href="#myResume"> Resume </a>
+              </li>
+              <li>
+                <a class="text-[#FCFCFD]!" href="#myPortfolio"> Project </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-[#FD853A] font-bold mb-4!">Contact</h2>
+            <ul class="space-y-2!">
+              <li class="text-[#FCFCFD]">+91 987-654-3210</li>
+              <li class="text-[#FCFCFD]">webdev99@gmail.com</li>
+              <li class="text-[#FCFCFD]">Portfolio-jcrea.com</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-[#FD853A] font-bold mb-4!">
+              Get the latest information
+            </h2>
+            <div class="flex flex-col">
+              <div class="flex">
+                <input
+                  id="emailInput"
+                  class="bg-[#fff] py-2! px-4! rounded-l-[10px] focus:outline-none"
+                  placeholder="Email Address"
+                  type="email"
+                />
+                <button
+                  id="submitButton"
+                  class="newsletter-email bg-[#FD853A] text-white py-2! px-4! rounded-r-[10px] cursor-pointer"
+                  onclick="validateEmail()"
+                >
+                  <i class="fas fa-arrow-right"> </i>
+                </button>
+              </div>
+            
+              <!-- Error message div -->
+              <div id="newsletter-error" class="newsletter-error text-[#FD853A] hidden mt-2"></div>
+            
+              <!-- Success message (hidden by default) -->
+              <div id="newsletter-success" class="text-green-500 hidden mt-2">Subscription successful!</div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-[55px]! border-gray-700" />
+        <div
+          class="flex flex-col md:flex-row justify-between items-center text-[#FCFCFD] text-sm"
+        >
+          <p>Copyright© 2023 Jayesh. All Rights Reserved.</p>
+          <div class="flex space-x-4!">
+            <a class="hover:underline text-[#FCFCFD]!" href="#">
+              User Terms &amp; Conditions
+            </a>
+            <a class="hover:underline text-[#FCFCFD]!" href="#"> Privacy Policy </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.quote,
+.rating,
+.intro {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+    opacity 0.4s ease-in-out;
+}
+.introPattern {
+  transition: transform 0.3s cubic-bezier(0.3, 1.5, 0.6, 1),
+    opacity 0.4s ease-in-out;
+}
+.move-up {
+  transform: translateY(-200px); /* Moves up smoothly */
+}
+
+.move-down {
+  transform: translateY(500px); /* Moves down behind the semicircle */
+  opacity: 0; /* Fades out slightly */
+}
+.move-down.decorator {
+  transform: translateX(200px);
+}
+.scale-up {
+  /* scale: 1; */
+  opacity: 1;
+  transform: translateY(-100%);
+}
+.abs-left {
+  transition: all 4s cubic-bezier(0.47, 1.67, 0.67, 0.17);
+}
+/* Hover effect */
+.left-float-up {
+  transform: rotate(20deg);
+  top: 220px;
+}
+.abs-center {
+  transition: all 4s cubic-bezier(0.47, 1.67, 0.67, 0.17);
+}
+.center-float-right {
+  transform: rotate(60deg);
+  left: 760px;
+}
+
+.abs-right {
+  transition: all 4s cubic-bezier(0.47, 1.67, 0.67, 0.17);
+}
+.right-float-right {
+  transform: rotate(20deg);
+  top: 156px;
+}
+.bgLoops {
+  transition: all 0.3s cubic-bezier(0.3, 1.5, 0.6, 1), opacity 0.4s ease-in-out;
+}
+.loop-up {
+  scale: 1;
+  opacity: 1;
+}
+.hirePerson {
+  transition: transform 0.3s cubic-bezier(0.3, 1.5, 0.6, 1);
+}
+.hirePerson:hover {
+  transform: translateY(20px);
+}
+.customGradiant {
+  background: linear-gradient(0deg, #ffffff, #ffffff),
+    linear-gradient(
+      207.19deg,
+      rgba(0, 0, 0, 0) 47.41%,
+      rgba(0, 0, 0, 0.359679) 76.39%,
+      rgba(0, 0, 0, 0.5) 89.23%
+    );
+}
+
+/* marquee style */
+.marquee-row {
+  width: 100%;
+  overflow-x: hidden;
+}
+.marquee-block {
+  position: relative;
+  display: flex;
+  width: 100%;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  justify-content: space-between;
+}
+.marquee-item-list {
+  display: inline-flex;
+}
+.marquee-item-list li {
+  width: 100%;
+  list-style: none;
+  padding-right: 30px;
+  font-size: 40px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-right: 12px;
+}
+.marquee1 {
+  animation-name: marquee1;
+}
+@keyframes marquee1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.name-error,
+.email-error,
+.message-error {
+  transition: all 1s ease-in-out;
+}
+
+.border-radial {
+  border: 2px solid;
+  border-image-source: radial-gradient(
+    87.42% 50% at 50% 50%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+}
+
+/* service slider css */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  transform: translateY(40px);
+}
+
+.slick-dots li {
+  margin: 0 5px;
+  list-style: none;
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  border: 0;
+  background: #E4E7EC;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.slick-dots li.slick-active button{
+  border-radius: 10px;
+  background: #FD853A;
+}
+
+.slick-dots li button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #E4E7EC;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li.slick-active {
+  width: 45px;
+}
+
+.slick-dots li.slick-active button:before {
+  width: 45px;
+  border-radius: 10px;
+  background-color: #FD853A;
+}
+/* Add gap between cards */
+.slick-slide {
+  margin: 0 15px;
+}
+
+.slick-list {
+  margin: 0 -15px;
+}
+
+ /* Mobile Menu Styles */
+ body.no-scroll {
+  overflow: hidden;
+}
+
+ #mobile-menu {
+  position: absolute;
+  top: 100%;
+  background: black;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-100%) scale(0);
+  opacity:0;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+#mobile-menu.active {
+  transform: translateY(-1%) scale(1);
+  opacity: 1;
+}
+
+#mobile-menu a {
+  padding: 15px 30px;
+  color: white;
+  font-size: 24px;
+  display: block;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#mobile-menu a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.cross-icon{
+  opacity: 0;
+}
+.hamburger.open{
+  opacity: 0;
+}
+.cross-icon.open{
+  opacity: 1;
+}
