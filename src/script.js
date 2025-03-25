@@ -1,3 +1,5 @@
+import "./styles.scss";
+console.log("Webpack is running!");
 // and hover class to quote
 const quote = document.querySelector(".quote");
 const rating = document.querySelector(".rating");
@@ -136,6 +138,9 @@ document.addEventListener("DOMContentLoaded", function () {
       alert(
         `${nameInput.value.toUpperCase()}, your message has been sent successfully!`
       );
+      nameInput.value = null;
+      emailInput.value = null;
+      messageInput.value = null;
     }
   });
 });
